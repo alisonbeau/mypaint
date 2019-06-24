@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>My Paint</title>
+	<meta charset="utf-8">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">  
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<img src="img/paint.png" alt="logo" id="logo">
+		</div>
+		<div id="titre">
+			<h1> My Paint </h1>
+		</div>
+	</header>
+		<div class="wrapper">
+			<div id="head">
+ 				<div class="controls">
+    				<input type="color" id="color"/>
+    				<input type="range" min="1" max="60" id="size" />
+  				</div>
+  			</div>
+  			<div id="choix">
+  				<label> <input type="radio" name="choix" id="arc" value="arc"> <img src="img/cercle.png" alt="cercle"> </label>
+    			<label> <input type="radio" name="choix" id="crayon" value="crayon"> <img src="img/crayon.png" alt="crayon"> </label>
+    			<label> <input type="radio" name="choix" id="rect" value="rect"> <img src="img/rect.png" alt="rectangle"> </label>
+    			<label> <input type="radio" name="choix" id="ligne" value="ligne"> <img src="img/ligne.png" alt="ligne"> </label>
+    			<label> <input type="radio" name="choix" id="gomme" value="gomme"> <img src="img/gomme.png" alt="gomme"> </label>
+    			<label> <input type="checkbox" name="choix1" id="remplir" value="remplir"> <img src="img/bombe.png"> </label>
+    		</div>
+  			<canvas id="canvas" width="1200" height="700"></canvas>
+  			<div id="buttons">
+  				<button id="clear">Clear</button>
+  				<button id="undo">Undo</button>
+  				<button id="img"> Enregistrer </button>
+  				<input type='file' id="fileUpload" />
+  			</div>
+		</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  background: #e0e0d1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#head {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.controls {
+  width: 15%;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  padding: 1.7%;
+}
+
+.controls input {
+  float: left;
+  margin-right: 10px;
+}
+
+canvas {
+  border: solid 1px black;
+  background: white;
+  cursor: pointer;
+}
+
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: relative; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  width: 27px;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  background: white;
+}
+
+
+#logo {
+  width: 43%;
+  float: left;
+  height: 5em
+}
+
+#logo img {
+  width: 10%;
+  text-align: right;
+  float: right;
+}
+
+#titre {
+  width: 57%;
+  float: left;
+  height: 5em;
+}
+
+#titre h1 {
+  font-size: 70px;
+  float: left;
+  margin-left: 0.5%;
+  font-family: 'Tangerine', cursive;
+}
+
+#remplir img {
+  width: 30%;
+}
